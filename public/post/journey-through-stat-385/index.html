@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>Journey Through Stat 385 - Guo Jun Cheng&#39;s website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="generator" content="Hugo 0.67.0" /><meta itemprop="name" content="Journey Through Stat 385">
+<meta itemprop="description" content="We&#39;ve learned many ways to manipulate objects and use R. The website is also a good resource in case we forget.">
+<meta itemprop="datePublished" content="2020-03-15T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-03-15T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="348">
+<meta itemprop="image" content="/img/2020/01/Bulldogs.png">
+
+
+
+<meta itemprop="keywords" content="markdown,R Studio," /><meta property="og:title" content="Journey Through Stat 385" />
+<meta property="og:description" content="We&#39;ve learned many ways to manipulate objects and use R. The website is also a good resource in case we forget." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/journey-through-stat-385/" />
+<meta property="og:image" content="/img/2020/01/Bulldogs.png" />
+<meta property="article:published_time" content="2020-03-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-03-15T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/img/2020/01/Bulldogs.png"/>
+
+<meta name="twitter:title" content="Journey Through Stat 385"/>
+<meta name="twitter:description" content="We&#39;ve learned many ways to manipulate objects and use R. The website is also a good resource in case we forget."/>
+<link rel="stylesheet" href="/css/bundle.min.a86839252b4aa4853111ceba45af5da1d6c3dc66a6a3b6854750bb2df61dfe37.css" integrity="sha256-qGg5JStKpIUxEc66Ra9dodbD3Gamo7aFR1C7LfYd/jc=">
+        <link rel="stylesheet" href="/css/add-on.css">
+</head>
+
+  <body>
+    
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/">
+        
+          
+            post
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu">
+      
+        
+          
+          
+            <a href="/" class="link"><i class='fa fa-home'></i> Home</a>
+          
+        
+      
+        
+          
+          
+            <a href="/about/" class="link"><i class='far fa-id-card'></i> About</a>
+          
+        
+      
+        
+          
+          
+            <a href="/blog/" class="link"><i class='far fa-newspaper'></i> Blog</a>
+          
+        
+      
+        
+          
+          
+            <a href="/categories/" class="link"><i class='fas fa-sitemap'></i> Categories</a>
+          
+        
+      
+        
+          
+          
+            <a href="/resume/" class="link"><i class='fas fa-sitemap'></i> Resume</a>
+          
+        
+      
+      <a href="#share-menu" class="share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      
+
+    </menu>
+    
+
+    <a href="#share-menu" class="share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    <a href="#lang-menu" class="lang-toggle" lang="en">en</a>
+    <a href="#site-nav" class="nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="lang-menu" class="flyout-menu">
+  <a href="#" lang="en" class="link active">English (en)</a>
+  
+    
+      
+    
+  
+</menu>
+
+  
+    <menu id="share-menu" class="flyout-menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=Journey%20Through%20Stat%20385&amp;url=%2fpost%2fjourney-through-stat-385%2f" target="_blank" rel="noopener" class="share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=%2fpost%2fjourney-through-stat-385%2f" target="_blank" rel="noopener" class="share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=%2fpost%2fjourney-through-stat-385%2f&amp;title=Journey%20Through%20Stat%20385" target="_blank" rel="noopener" class="share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=%2fpost%2fjourney-through-stat-385%2f&amp;title=Journey%20Through%20Stat%20385" target="_blank" rel="noopener" class="share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=%2fpost%2fjourney-through-stat-385%2f&amp;description=Journey%20Through%20Stat%20385" target="_blank" rel="noopener" class="share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check out this post by Jun%20Cheng%20Guo&amp;body=%2fpost%2fjourney-through-stat-385%2f" target="_blank" class="share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/"><img src="/img/main/Profile.jpg" class="circle" width="" alt="Hugo Future Imperfect Slim" /></a>
+  <header>
+    <h1>Guo, Jun Cheng <br> 郭俊成</h1>
+  </header>
+  <main>
+    <p>Blog, Economics, Business, Programming</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/jcguo26" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+<li><a href="//flickr.com/photos/johnguoaa" target="_blank" rel="noopener" title="Flickr" class="fab fa-flickr"></a></li>
+
+
+
+
+<li><a href="//linkedin.com/in/junchenguo" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//instagram.com/insta_jon_guo" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:jon.guo1994@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        <article class="post">
+  <header>
+  <div class="title">
+    
+        <h2><a href="/post/journey-through-stat-385/">Journey Through Stat 385</a></h2>
+    
+    
+        <p>We&#39;ve learned many ways to manipulate objects and use R. The website is also a good resource in case we forget.</p>
+    
+</div>
+  <div class="meta">
+    <time class="published" datetime="2020-03-15 00:00:00 &#43;0000 UTC">
+      March 15, 2020
+    </time>
+    <span class="author">Jun Cheng Guo</span>
+    
+      <p>2 minutes read</p>
+    
+  </div>
+</header>
+
+  <section id="socnet-share">
+    
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=Journey%20Through%20Stat%20385&amp;url=%2fpost%2fjourney-through-stat-385%2f" target="_blank" rel="noopener" class="share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=%2fpost%2fjourney-through-stat-385%2f" target="_blank" rel="noopener" class="share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=%2fpost%2fjourney-through-stat-385%2f&amp;title=Journey%20Through%20Stat%20385" target="_blank" rel="noopener" class="share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=%2fpost%2fjourney-through-stat-385%2f&amp;title=Journey%20Through%20Stat%20385" target="_blank" rel="noopener" class="share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=%2fpost%2fjourney-through-stat-385%2f&amp;description=Journey%20Through%20Stat%20385" target="_blank" rel="noopener" class="share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check out this post by Jun%20Cheng%20Guo&amp;body=%2fpost%2fjourney-through-stat-385%2f" target="_blank" class="share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+  </section>
+  
+  <a href="/post/journey-through-stat-385/" class="image featured">
+    
+      <img src="/img/2020/01/Bulldogs.png" alt="">
+    
+  </a>
+
+
+  <div class="content">
+    <h2 id="march-15th-2020">March 15th 2020</h2>
+<h3 id="1045-pm">10:45 P.M.</h3>
+<p><a href="https://nkha149.github.io/stat385-sp2020/">Ha&rsquo;s Stat 385 Page</a></p>
+<h4 id="week-1">Week 1</h4>
+<ul>
+<li>Objects/ Variables &lt;- (Dice)</li>
+<li>(Atomic) Vectors c(Fruit Medly)</li>
+<li>Vector [indexes]</li>
+<li>Built In function(arguements) {}</li>
+</ul>
+<p>During the first week of class, we learned about how to communicate with R.</p>
+<h4 id="week-2">Week 2</h4>
+<ul>
+<li>Data Types: Double, Integer, Character, Logical, Complex and Raw</li>
+<li>Lists [[vector]][list]</li>
+<li>Matrix [array of dimension 2,]</li>
+<li>Array [n,dim,array]</li>
+<li>dim(dice)&lt;-c(&ldquo;changes dim of object&rdquo;)</li>
+<li>attributes(object) &lt;-c(&ldquo;one&rdquo;)</li>
+<li>names(die)&lt;-c(&ldquo;give&rdquo;,&ldquo;names&rdquo;,&ldquo;to&rdquo;,&ldquo;dice&rdquo;)</li>
+</ul>
+<p>During the second week,we learned about types of objects we can show R</p>
+<h4 id="week-3">Week 3</h4>
+<ul>
+<li>Changing Values (describe value) &lt;-c(then, assign) [note:can assign values that don&rsquo;t exist]</li>
+<li>Data Frame (changing data a row/column at a time), create new columns data$new_column &lt;-</li>
+<li>Logical Subsetting: Tests that yield T or F. Example 1&gt;c(0,1,2) TFF Note: %in% test if left is in object on right</li>
+<li>Logical operators for subsetting: deck[deck$face == &ldquo;ace&rdquo;,] Tests column for TRUE, then TRUE elements in object are shown</li>
+<li>Boolea Operators, Place boolean operators between 2 logical tests, Element wise</li>
+<li>If Statement If condiiton is True, then {} Note: Single TF statement</li>
+<li>Else Statement, condition is false</li>
+<li>Plotting hist(objects), boxplot(objects), scatterplot(plot(objects))</li>
+</ul>
+<p>R&rsquo;s IQ is pretty high</p>
+<h4 id="week-4">Week 4</h4>
+<ul>
+<li>For Loops repeat code block for every element in an input object or set, for (value in x) {} Value = arguement. Can be used tofill up a vector as for loop runs element by element</li>
+<li>While loops runs code while condition is TRUE. Code block must change argument as it runs</li>
+<li>Repeat Loops will run until it hits break</li>
+<li>Vectorizing Code for Speed: use subsetting to extract elements into a vector, then manipulate whole vector</li>
+</ul>
+<p>Week 4 we learned about For, While, and Repeat Loops as well as vectorizing code for speed. I learned that R can run faster if he is trained properly.</p>
+<h4 id="week5-7">Week5-7</h4>
+<ul>
+<li>github: Online place to store projects that can be opened to other collaborators</li>
+<li>Main functions: Pull(Download to computer), add(add changes to local files), commit(lock in changes in local files), and push (update cloud with files)</li>
+<li>Can use github to host website</li>
+</ul>
+<p>Weeks 5 through 7, I learned that R can communicate with Github who manages files online.</p>
+
+  </div>
+  <footer>
+    <ul class="stats">
+  
+    
+    
+      <li class="categories">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="/categories/daily-blog">Daily Blog</a></li>
+          
+        </ul>
+      </li>
+    
+  
+  
+    
+    
+      <li class="tags">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="/tags/markdown">markdown</a></li>
+          
+            
+            <li><a class="article-category-link" href="/tags/r-studio">R Studio</a></li>
+          
+        </ul>
+      </li>
+    
+  
+</ul>
+
+  </footer>
+</article>
+
+
+<div class="pagination">
+  
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recent posts</h1>
+      </header>
+      
+      <article class="mini-post">
+        <section>
+          
+  <a href="/post/journey-through-stat-385/" class="image featured">
+    
+      <img src="/img/2020/01/Bulldogs.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <header>
+          <h1><a href="/post/journey-through-stat-385/">Journey Through Stat 385</a></h1>
+          <time class="published" datetime="">March 15, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="/post/">Post</a></h1>
+          <time class="published" datetime="">March 15, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+  <a href="/blog/markdown-syntax.fr/" class="image featured">
+    
+      <img src="/img/2014/04/pic02.jpg" alt="">
+    
+  </a>
+
+
+        </section>
+        <header>
+          <h1><a href="/blog/markdown-syntax.fr/">Guide de syntaxe de Markdown</a></h1>
+          <time class="published" datetime="">March 11, 2019</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+  <a href="/blog/markdown-syntax/" class="image featured">
+    
+      <img src="/img/2014/04/pic02.jpg" alt="">
+    
+  </a>
+
+
+        </section>
+        <header>
+          <h1><a href="/blog/markdown-syntax/">Markdown Syntax Guide</a></h1>
+          <time class="published" datetime="">March 11, 2019</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+  <a href="/blog/rich-content/" class="image featured">
+    
+      <img src="/img/2017/08/pic04.jpg" alt="">
+    
+  </a>
+
+
+        </section>
+        <header>
+          <h1><a href="/blog/rich-content/">Rich Content</a></h1>
+          <time class="published" datetime="">March 10, 2019</time>
+        </header>
+      </article>
+      
+      
+        <a href="/blog/" class="button">See more</a>
+      
+    </section>
+  
+
+  
+    
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+            
+          
+          
+          <li>
+            
+              <a href="/categories/syntax/">syntax<span class="count">2</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/themes/">themes<span class="count">2</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/daily-blog/">daily-blog<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/r/">r<span class="count">1</span></a>
+            
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>Student at the University of Illinois at Urbana Champaign</p>
+      <footer>
+        <a href="/about" class="button">Learn More</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/jcguo26" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+<li><a href="//flickr.com/photos/johnguoaa" target="_blank" rel="noopener" title="Flickr" class="fab fa-flickr"></a></li>
+
+
+
+
+<li><a href="//linkedin.com/in/junchenguo" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//instagram.com/insta_jon_guo" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:jon.guo1994@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2020
+      
+        Guo Jun Cheng&#39;s website
+      
+    . <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.67.0' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.e0c399b948d3cf5c3a5e3badb94023d0b064a19ac39fd8cd79fb9f57fa4d1091.js" integrity="sha256-4MOZuUjTz1w6XjutuUAj0LBkoZrDn9jNefufV/pNEJE="></script>
+    <script src="/js/add-on.js"></script>
+    </div>
+  </body>
+</html>
