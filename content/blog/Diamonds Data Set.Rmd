@@ -1,0 +1,125 @@
+---
+title: Diamonds
+author: Jun Cheng Guo
+date: '2020-04-03'
+categories:
+  - Daily Blog
+tags:
+  - markdown
+  - R Studio
+  - Projects
+slug: Diamonds
+images:
+  - img/2020/01/Diamond.jpg
+type: post
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+***
+
+## Dataset: diamonds 
+
+This data contains the prices and other attributes of almost 54,000 diamonds.
+
+```{r message=FALSE, include=FALSE}
+library(tidyverse)
+library(gridExtra)
+str(diamonds)
+?diamonds
+```
+
+### Scatterplot
+
+  - `price` as the $y$-axis and `carat` as the $x$-axis.
+  
+- **Quality of Cut as Color, Adjusted for Transparency **
+
+```{r echo=FALSE, fig.align='center'}
+# add your graph here
+
+ggplot(
+  
+  diamonds
+  
+  )+
+  
+  geom_point(
+  aes(
+    
+    x = carat,
+    y = price,
+    colour = cut
+  ),
+  
+  alpha = 2/10
+  
+  )
+
+
+
+```
+
+- **As a diamond get bigger, its price increases. As a diamond's cut gets more luminous, its price increases. The bigger the diamond, the more effect its cut has on price**
+  
+### Boxplot
+
+
+- **`carat` as the $y$-axis and `cut` as the $x$-axis** 
+
+```{r echo=FALSE, fig.align='center'}
+# add your graph here
+bp<-ggplot(
+  
+  diamonds
+  
+)+
+  
+  geom_boxplot(
+    
+    aes(
+      
+      x = cut,
+      y = carat 
+      
+    ),
+    
+    fill = rgb(2/255, 105/255, 164/255)
+    #Medium Persian Blue
+  )
+bp + coord_flip()
+```
+
+- **On average, Fair Diamonds are larger than Ideal diamonds. The largest Fair Diamond is 5 carats while the largest Ideal diamond is 3.5 carats**
+
+
+### Histogram
+
+
+- **Diamond Distribution** 
+  
+
+```{r echo=FALSE, fig.align='center'}
+# add your graph here
+ggplot(
+  
+  diamonds
+  
+  )+
+  
+  geom_histogram(
+    
+    aes(
+      
+      x = carat,
+      
+    ),
+    
+    bins = 50,
+    fill = rgb(254/255, 124/255, 0/255), #Amber
+    color = rgb(2/255, 105/255, 164/255) #Medium Persian Blue
+    
+  )
+```
+- **There are many small diamonds, but few larger than 3 carats**
